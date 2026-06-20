@@ -6,7 +6,8 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
 
 # Ümit Mert Çağlar
 
-![Mert](1706702635109.jpg)
+<img src="1706702635109.jpg" alt="Mert" width="200"/>
+
 
 **PhD Candidate, Research and Teaching Assistant**  
 **Graduate School of Informatics**  
