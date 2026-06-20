@@ -6,9 +6,11 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
 
 # Ümit Mert Çağlar
 
-**Electrical and Electronics Engineer, M.Sc. / PhD Researcher**  
-[Middle East Technical University (METU)](https://www.metu.edu.tr), Ankara, Türkiye  
-**Informatics Institute, Room B-222**
+![Mert](1706702635109.jpg)
+
+**PhD Candidate, Research and Teaching Assistant**  
+**Graduate School of Informatics**  
+[Middle East Technical University (METU)](https://www.metu.edu.tr), Ankara, Türkiye
 
 ---
 
@@ -16,14 +18,14 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
 
 | | | |
 | :--- | :--- | :--- |
-| 📧 **Email:** [mert.caglar@metu.edu.tr](mailto:mert.caglar@metu.edu.tr) | 🆔 **ORCID:** [0000-0002-0391-3847](https://orcid.org/0000-0002-0391-3847)  | 🌐 **Homepage:** [METU AVESIS](https://avesis.metu.edu.tr/mecaglar) |
+| 📧 **Email:** mert.caglar [at] metu.edu.tr | 🆔 **ORCID:** [0000-0002-0391-3847](https://orcid.org/0000-0002-0391-3847)  | 🌐 **Homepage:** [METU AVESIS](https://avesis.metu.edu.tr/mecaglar) |
 | 🐙 **GitHub:** [caglarmert](https://github.com/caglarmert) | 💼 **LinkedIn:** [mertcaglar](https://linkedin.com/in/mertcaglar) | 🐳 **Docker:** [mertcaglar](https://hub.docker.com/repositories/mertcaglar) |
 
 ---
 
 ## 🔬 Research Profile
 
-My research focus is on **computer vision** and **generative models**, specifically addressing critical challenges in data scarcity, volume, and quality. 
+My research focus is on **computer vision** and **generative models**, specifically addressing critical challenges in data scarcity, volume, and quality in remote sensing or medical imaging. 
 
 * **Data Scarcity & Generative Augmentation:** I utilize Generative Adversarial Networks (GAN) and Denoising Diffusion Probabilistic Models (DDPM) to synthesize high-quality image data, evaluating their utility through extensive benchmarking and ablation studies.
 * **Geospatial & Earth Observation Benchmarks:** I introduced two publicly available large-scale datasets: 
@@ -36,30 +38,27 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 ## 🎓 Education
 
-* **PhD** in Modelling and Simulation | **Middle East Technical University** `2022 — Present`
+* **PhD** in Modelling and Simulation | **Middle East Technical University** 2022 — Present
   * *Ongoing Research:* Vision-Language Data Augmentation and Lightweight Segmentation Models for Scalable Remote Sensing Image Analysis.
-* **MSc** in Modelling and Simulation | **Middle East Technical University** `2019 — 2022`
+* **MSc** in Modelling and Simulation | **Middle East Technical University** 2019 — 2022
   * *Thesis:* Improving Classification Performance of Endoscopic Images with Generative Data Augmentation.
-* **BSc** in Electrical and Electronics Engineering | **Middle East Technical University** `2013 — 2018`
+* **BSc** in Electrical and Electronics Engineering | **Middle East Technical University** 2013 — 2018
 
 ---
 
 ## 💼 Experience
 
-### 🏛️ Academic Experience (METU Graduate School of Informatics)
-`2024 — Present`
+### 🏛️ Academic Experience (METU Graduate School of Informatics) 2024 — Present
 * 👥 **Teaching Assistant** | *Transformers and Attention-Based Deep Networks*
 * 💻 **Research Assistant** | *Computer Vision and Deep Learning Laboratory*
 * 📖 **Researcher** | *Applied Intelligence Research Laboratory*
 
-### 🚀 Industrial Experience (TAI - Turkish Aerospace Industries)
-`2019 — 2023`
-* ⚙️ **Software Design Engineer** | *Data Science and Modelling*
-* 📖 **Reinforcement Learning Engineer** | *Aeronautical-Avionics Simulations*
-* 👥 **Technical Team Lead & Scrum Master**
+### 🚀 Industrial Experience (TAI - Turkish Aerospace Industries) 2019 — 2023
+* ⚙️ **Software Design** | *Data Science and Modelling*
+* 📖 **Reinforcement Learning** | *Aeronautical-Avionics Simulations*
+* 👥 **Technical Team Lead**
 
-### 📡 STM
-`2018 — 2018`
+### 📡 STM 2018 — 2018
 * ⚡ **RF and Simulation Systems Engineer**
 
 ---
