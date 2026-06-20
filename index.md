@@ -17,10 +17,10 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
 
 ### 📬 Contact & Links
 
-| | | |
+| 🐙 **GitHub:** [caglarmert](https://github.com/caglarmert) | 💼 **LinkedIn:** [mertcaglar](https://linkedin.com/in/mertcaglar) | 🐳 **Docker:** [mertcaglar](https://hub.docker.com/repositories/mertcaglar) |
 | :--- | :--- | :--- |
 | 📧 **Email:** mert.caglar [at] metu.edu.tr | 🆔 **ORCID:** [0000-0002-0391-3847](https://orcid.org/0000-0002-0391-3847)  | 🌐 **Homepage:** [METU AVESIS](https://avesis.metu.edu.tr/mecaglar) |
-| 🐙 **GitHub:** [caglarmert](https://github.com/caglarmert) | 💼 **LinkedIn:** [mertcaglar](https://linkedin.com/in/mertcaglar) | 🐳 **Docker:** [mertcaglar](https://hub.docker.com/repositories/mertcaglar) |
+
 
 ---
 
@@ -39,25 +39,25 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 ## 🎓 Education
 
-* **PhD** in Modelling and Simulation | **Middle East Technical University** 2022 — Present
+* **PhD** in Modelling and Simulation, **Middle East Technical University** 2022 — Present
   * *Ongoing Research:* Vision-Language Data Augmentation and Lightweight Segmentation Models for Scalable Remote Sensing Image Analysis.
-* **MSc** in Modelling and Simulation | **Middle East Technical University** 2019 — 2022
+* **MSc** in Modelling and Simulation, **Middle East Technical University** 2019 — 2022
   * *Thesis:* Improving Classification Performance of Endoscopic Images with Generative Data Augmentation.
-* **BSc** in Electrical and Electronics Engineering | **Middle East Technical University** 2013 — 2018
+* **BSc** in Electrical and Electronics Engineering, **Middle East Technical University** 2013 — 2018
 
 ---
 
 ## 💼 Experience
 
 ### 🏛️ Academic Experience (METU Graduate School of Informatics) 2024 — Present
-* 👥 **Teaching Assistant** | *Transformers and Attention-Based Deep Networks*
-* 💻 **Research Assistant** | *Computer Vision and Deep Learning Laboratory*
-* 📖 **Researcher** | *Applied Intelligence Research Laboratory*
+👥 **Teaching Assistant**, *Transformers and Attention-Based Deep Networks*  
+💻 **Research Assistant**, *Computer Vision and Deep Learning Laboratory*  
+📖 **Researcher**, *Applied Intelligence Research Laboratory*
 
 ### 🚀 Industrial Experience (TAI - Turkish Aerospace Industries) 2019 — 2023
-* ⚙️ **Software Design** | *Data Science and Modelling*
-* 📖 **Reinforcement Learning** | *Aeronautical-Avionics Simulations*
-* 👥 **Technical Team Lead**
+⚙️ **Software Design**, *Data Science and Modelling*  
+📖 **Reinforcement Learning**, *Aeronautical-Avionics Simulations*  
+👥 **Technical Team Lead**
 
 ### 📡 STM 2018 — 2018
 * ⚡ **RF and Simulation Systems Engineer**
@@ -66,17 +66,17 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 ## 🏆 Awards & Accomplishments
 
-* 🥈 **2nd Place** — ICIP Grand Challenge on Colorectal Cancer Tumor Grading and Segmentation (Out of 39 international teams) `2025`
-* 📜 **Best Poster Award** — Graduate School of Informatics, 6th Open Research Day `2025`
-* 🎖️ **Special Mention** — Graduate School of Informatics, 4th Open Research Day `2023`
-* 📜 **Best Poster Award** — Graduate School of Informatics, 3rd Open Research Day `2022`
+* 🥈 **2nd Place** — ICIP Grand Challenge on Colorectal Cancer Tumor Grading and Segmentation (Out of 39 international teams) 2025
+* 📜 **Best Poster Award** — Graduate School of Informatics, 6th Open Research Day 2025
+* 🎖️ **Special Mention** — Graduate School of Informatics, 4th Open Research Day 2023
+* 📜 **Best Poster Award** — Graduate School of Informatics, 3rd Open Research Day 2022
 
 ---
 
 ## 💰 Scholarships
 
-* 🎓 **TÜBİTAK 2211-A** National Doctorate Scholarship `2022 — 2027`
-* 🎓 **TEV** (Turkish Education Foundation) Doctoral Scholarship `2024 — 2027`
+* 🎓 **TÜBİTAK 2211-A** National Doctorate Scholarship 2022 — 2027
+* 🎓 **TEV** (Turkish Education Foundation) Doctoral Scholarship 2024 — 2027
 
 ---
 
