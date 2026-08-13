@@ -18,9 +18,9 @@ title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for E
   <!-- Quick Links -->
   <p>
     <a href="https://github.com/caglarmert/BELDE"><strong>[ 💻 Code ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE"><strong>[ 📊 BELDE Dataset ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE-K"><strong>[ 🇰🇷 BELDE-K ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE-CA-NV"><strong>[ 🇺🇸 BELDE-CA-NV ]</strong></a>
+    <a href="https://huggingface.co/datasets/caglarmert/BELDE"><strong>[ BELDE Dataset ]</strong></a> &nbsp;&nbsp;
+    <a href="https://huggingface.co/datasets/caglarmert/BELDE-K"><strong>[ BELDE-K Dataset ]</strong></a> &nbsp;&nbsp;
+    <a href="https://huggingface.co/datasets/caglarmert/BELDE-CA-NV"><strong>[ BELDE-CA-NV Dataset ]</strong></a>
   </p>
 </div>
 
