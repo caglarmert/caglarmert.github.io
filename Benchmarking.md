@@ -37,7 +37,18 @@ Volume and quality of datasets are crucial for deep learning model training, yet
 * **Three-Way Alignment Analysis:** Identification of major disconnections among automated quality metrics, human visual preference, and downstream model performance, highlighting the misalignment between fidelity, preference, and utility.
 * **Downstream Utility Benchmark:** Empirical evidence showing that synthetic datasets with poor fidelity scores act as highly effective additions when blended with real data, yielding performance gains that standard quality metrics fail to predict.
 
+<figure align="center">
+  <img src="bench1.jpg" alt="Image transformations and perturbations" width="85%">
+  <figcaption><b>Figure 1:</b> Visual comparison of image transformations across real images.</figcaption>
+</figure>
+
+
 ## Human Perception and Evaluation Pipeline
+<figure align="center">
+  <img src="bench2.jpg" alt="Human Perception Study" width="85%">
+  <figcaption><b>Figure 2:</b> Human perception study screens for (a) data augmentation alignment, (b) utility for downstream tasks, (c) conditional generation preference and (d) data realism scores</figcaption>
+</figure>
+
 <p align="justify">
 To evaluate the alignment between automated quality metrics, human perception, and downstream data utility, the evaluation framework is structured into four sequential phases:
 </p>
@@ -57,10 +68,14 @@ Based on empirical findings exposing the paradox between isolated fidelity metri
     <li><b>Account for orientation bias in filtering:</b> Feature extractors used in data quality metrics are orientation-sensitive, leading to false pruning triggers under standard geometric augmentations.</li>
     <li><b>Prioritize task-aware utility over fidelity:</b> Curation pipelines must complement generic quality metrics with direct downstream task evaluation.</li>
 </ul>
-
 <hr>
 
 ## Dataset Availability and Reproducibility
+<figure align="center">
+  <img src="bench3.jpg" alt="Image generation comparison of different models" width="85%">
+  <figcaption><b>Figure 3:</b> Image generation comparison of conditional Stable Diffusion for BELDE-trained (BELDE-CSD), ARAS-trained (ARAS-CSD) and conditional U-Net GAN (ARAS-CUGAN) with the real and conditioning images (segmentation)</figcaption>
+</figure>
+
 <p align="justify">
 The datasets used throughout this work are publicly available under the Creative Commons Attribution 4.0 International license (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).
 </p>
