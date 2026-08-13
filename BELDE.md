@@ -1,3 +1,8 @@
+---
+layout: page
+title: BELDE
+---
+
 # BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe
 
 **Authors:** Ümit Mert Çağlar and Alptekin Temizel
