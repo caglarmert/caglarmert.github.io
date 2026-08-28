@@ -22,6 +22,7 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
   <a href="https://avesis.metu.edu.tr/mecaglar" target="_blank" rel="noopener">🌐 METU AVESIS</a>
 </div>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">🔬 Research Profile</span>
 
 My research focus is on **computer vision** and **generative models**, specifically addressing critical challenges in data scarcity, volume, and quality in remote sensing or medical imaging.
@@ -30,7 +31,9 @@ My research focus is on **computer vision** and **generative models**, specifica
 * **Geospatial & Earth Observation Benchmarks:** I introduced two publicly available large-scale datasets — **ARAS400k** and **BELDE** (see below).
 * **Efficient Deep Learning:** Developed **LALE** (Lightweight-transformer Architecture for Land-cover Estimation), an efficient dense segmentation model.
 * **Data Quality Metrics:** My recent research addresses data quality metrics crucial for tracking synthetic data generation fidelity and downstream model utility.
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">🚀 Selected Projects &amp; Recent Work</span>
 
 <div class="project-grid">
@@ -42,27 +45,29 @@ My research focus is on **computer vision** and **generative models**, specifica
   </a>
 
   <a class="project-card" href="{{ '/BELDE.html' | relative_url }}">
-    <span class="project-card__tag">Dataset</span>
+    <span class="project-card__tag">Dataset · ECCV 2026 Workshop</span>
     <p class="project-card__title">BELDE</p>
     <p class="project-card__desc">1.08M curated image-mask pairs for RGB Earth-observation land-cover segmentation across Europe, with out-of-domain benchmarks.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 
   <a class="project-card" href="{{ '/Benchmarking.html' | relative_url }}">
-    <span class="project-card__tag">Study</span>
+    <span class="project-card__tag">Study · ECCV 2026 Workshop</span>
     <p class="project-card__title">Benchmarking Data-Quality Metrics</p>
     <p class="project-card__desc">A human-perception study aligning automated quality metrics, human judgment, and downstream segmentation utility for synthetic EO data.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 
   <a class="project-card" href="{{ '/LALE.html' | relative_url }}">
-    <span class="project-card__tag">Model</span>
+    <span class="project-card__tag">Model · ICMV 2026</span>
     <p class="project-card__title">LALE</p>
     <p class="project-card__desc">A lightweight hybrid convolution-transformer segmentation architecture reaching within 2.6 F1 of the best baseline at a fraction of the compute.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 </div>
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">🎓 Education</span>
 
 **PhD** in Modelling and Simulation, **Middle East Technical University** · 2022 — Present
@@ -72,7 +77,9 @@ My research focus is on **computer vision** and **generative models**, specifica
 *Thesis:* Improving Classification Performance of Endoscopic Images with Generative Data Augmentation.
 
 **BSc** in Electrical and Electronics Engineering, **Middle East Technical University** · 2013 — 2018
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">💼 Experience</span>
 
 ### 🏛️ Academic Experience (METU Graduate School of Informatics) — 2024 — Present
@@ -87,29 +94,35 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 ### 📡 STM — 2018
 **RF and Simulation Systems Engineer**
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">🏆 Awards &amp; Accomplishments</span>
 
 * **2nd Place** — ICIP Grand Challenge on Colorectal Cancer Tumor Grading and Segmentation (Out of 39 international teams) · 2025
 * **Best Poster Award** — Graduate School of Informatics, 6th Open Research Day · 2025
 * **Special Mention** — Graduate School of Informatics, 4th Open Research Day · 2023
 * **Best Poster Award** — Graduate School of Informatics, 3rd Open Research Day · 2022
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">🎓 Scholarships</span>
 
 * **TÜBİTAK 2211-A** National Doctorate Scholarship · 2022 — 2027
 * **TEV** (Turkish Education Foundation) Doctoral Scholarship · 2024 — 2027
+</section>
 
+<section class="panel" markdown="1">
 ## <span class="section-title">📚 Publications</span>
 
 *(Full publication record available via [ORCID](https://orcid.org/0000-0002-0391-3847) and [METU AVESIS](https://avesis.metu.edu.tr/mecaglar))*
 
 <ul class="pub-list">
 <li>Grounding Synthetic Data Generation With Vision and Language Models, CVPR 2026 Synthetic Data for Computer Vision Workshop — <a href="https://arxiv.org/abs/2603.09625">Paper</a> · <a href="{{ '/ARAS400k.html' | relative_url }}">Project Page</a></li>
-<li>LALE: Lightweight-Transformer Architecture for Land-Cover Estimation — <a href="https://arxiv.org/abs/2606.02092">Paper</a> · <a href="{{ '/LALE.html' | relative_url }}">Project Page</a></li>
+<li>LALE: Lightweight-Transformer Architecture for Land-Cover Estimation, ICMV 2026 — <a href="https://arxiv.org/abs/2606.02092">Paper</a> · <a href="{{ '/LALE.html' | relative_url }}">Project Page</a></li>
 <li>ARAS400k: A Large-Scale Remote Sensing Dataset Augmented with Synthetic Data for Segmentation and Captioning — <a href="https://zenodo.org/records/18890661">Dataset</a> · <a href="{{ '/ARAS400k.html' | relative_url }}">Project Page</a></li>
-<li>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe — <a href="https://arxiv.org/abs/2606.20909">Paper</a> · <a href="{{ '/BELDE.html' | relative_url }}">Project Page</a></li>
-<li>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation — <a href="{{ '/Benchmarking.html' | relative_url }}">Project Page</a></li>
+<li>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe, ECCV 2026 Workshop — <a href="https://arxiv.org/abs/2606.20909">Paper</a> · <a href="{{ '/BELDE.html' | relative_url }}">Project Page</a></li>
+<li>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation, ECCV 2026 Workshop — <a href="https://arxiv.org/abs/2606.25128">Paper</a> · <a href="{{ '/Benchmarking.html' | relative_url }}">Project Page</a></li>
 <li>Colorectal cancer segmentation with adaptive augmentation and multiresolution ensemble models, 18th International Conference on Machine Vision (ICMV 2025) — <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14114/141140I/Colorectal-cancer-segmentation-with-adaptive-augmentation-and-multiresolution-ensemble-models/10.1117/12.3096537.short">Paper</a></li>
 <li>Progressive Disease Image Generation with Ordinal-Aware Diffusion Models, Diagnostics 2025 — <a href="https://www.mdpi.com/2075-4418/15/20/2558">Paper</a></li>
 <li>Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images: from GIGA to Mini Challenge, IEEE International Conference on Image Processing Workshops (ICIPW) 2025 — <a href="https://ieeexplore.ieee.org/abstract/document/11385990">Paper</a></li>
@@ -117,3 +130,4 @@ My research focus is on **computer vision** and **generative models**, specifica
 <li>Ulcerative Colitis Mayo Endoscopic Scoring Classification with Active Learning and Generative Data Augmentation, IEEE International Conference on Bioinformatics and Biomedicine (IEEE BIBM 2023) — <a href="https://ieeexplore.ieee.org/abstract/document/10385621">Paper</a></li>
 <li>Improving classification performance of endoscopic images with generative data augmentation, METU 2022 — <a href="https://open.metu.edu.tr/handle/11511/96267">Thesis</a></li>
 </ul>
+</section>

@@ -4,7 +4,7 @@ title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for E
 ---
 
 # BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe
-**Ümit Mert Çağlar, Alptekin Temizel** | METU, Turkey
+**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](mailto:mecaglar@metu.edu.tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](mailto:atemizel@metu.edu.tr)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2606.20909-b31b1b.svg)](https://arxiv.org/abs/2606.20909)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/BELDE)

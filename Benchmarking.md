@@ -4,9 +4,9 @@ title: Benchmarking the Alignment of Data-Quality Metrics
 ---
 
 # Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation
-**Ümit Mert Çağlar, Alptekin Temizel** | METU, Turkey
+**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](mailto:mecaglar@metu.edu.tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](mailto:atemizel@metu.edu.tr)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](/papers/benchmarking.pdf)
+[![Paper](https://img.shields.io/badge/arXiv-2606.25128-b31b1b.svg)](https://arxiv.org/abs/2606.25128)
 [![Dataset](https://img.shields.io/badge/Datasets-ARAS400k_%7C_BELDE-blue.svg)](https://huggingface.co/caglarmert)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
@@ -97,6 +97,7 @@ If you find this work useful in your research, please consider citing:
 @article{caglar2026benchmarking,
   title={Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation},
   author={Caglar, Umit Mert and Temizel, Alptekin},
+  journal={arXiv preprint arXiv:2606.25128},
   year={2026}
 }
 ```

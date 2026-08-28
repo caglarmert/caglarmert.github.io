@@ -197,6 +197,21 @@ main {
   font-size: 0.96rem;
 }
 
+/* ---------- ORCID badges ---------- */
+.orcid-link {
+  display: inline-block;
+  margin-left: 3px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.orcid-link img {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
 /* ---------- Contact strip ---------- */
 .contact-strip {
   display: flex;
@@ -224,6 +239,20 @@ main {
   color: var(--accent-ink);
   text-decoration: none;
 }
+
+/* ---------- Section panels ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 8px 32px 32px;
+  margin: 28px 0;
+}
+
+.panel:first-of-type { margin-top: 20px; }
+
+.panel .section-title { margin-top: 8px; }
 
 /* ---------- Section headings ---------- */
 h2.section-title {
@@ -375,4 +404,5 @@ blockquote strong { color: var(--green-ink); }
   .hero { flex-direction: column; text-align: center; }
   .hero__photo { width: 108px; height: 108px; }
   main { padding: 28px 16px 60px; }
+  .panel { padding: 4px 18px 24px; }
 }
