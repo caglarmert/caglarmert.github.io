@@ -1,3 +1,9 @@
+---
+layout: page
+title: Benchmarking the Alignment of Data-Quality Metrics
+---
+
+
 # Grounding Synthetic Data Generation With Vision and Language Models
 **ECCV 2026** | [Ümit Mert Çağlar](mailto:mecaglar@metu.edu.tr), [Alptekin Temizel](mailto:atemizel@metu.edu.tr) | METU, Turkey
 
