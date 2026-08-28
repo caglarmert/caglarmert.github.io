@@ -1,0 +1,34 @@
+title: Ümit Mert Çağlar
+tagline: PhD Candidate · Computer Vision & Generative Models
+description: >-
+  Personal academic page of Ümit Mert Çağlar — PhD Candidate and Research
+  Assistant at METU Graduate School of Informatics, working on computer
+  vision, generative models and Earth observation datasets.
+author: Ümit Mert Çağlar
+email: mecaglar@metu.edu.tr
+url: "https://caglarmert.github.io"
+baseurl: ""
+
+github_username: caglarmert
+linkedin_username: mertcaglar
+docker_username: mertcaglar
+orcid_id: "0000-0002-0391-3847"
+avesis_url: "https://avesis.metu.edu.tr/mecaglar"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+exclude:
+  - README.md

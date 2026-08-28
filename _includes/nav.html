@@ -1,0 +1,13 @@
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="site-nav__brand" href="{{ '/' | relative_url }}">Ümit Mert Çağlar</a>
+    <div class="site-nav__links">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} class="is-active"{% endif %}>Home</a>
+      <a href="{{ '/ARAS400k.html' | relative_url }}"{% if page.url contains 'ARAS400k' %} class="is-active"{% endif %}>ARAS400k</a>
+      <a href="{{ '/BELDE.html' | relative_url }}"{% if page.url contains 'BELDE' %} class="is-active"{% endif %}>BELDE</a>
+      <a href="{{ '/Benchmarking.html' | relative_url }}"{% if page.url contains 'Benchmarking' %} class="is-active"{% endif %}>Benchmarking</a>
+      <a href="{{ '/poster.html' | relative_url }}"{% if page.url contains 'poster' %} class="is-active"{% endif %}>Poster</a>
+      <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</nav>
