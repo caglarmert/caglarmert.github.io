@@ -54,13 +54,6 @@ My research focus is on **computer vision** and **generative models**, specifica
     <p class="project-card__desc">A human-perception study aligning automated quality metrics, human judgment, and downstream segmentation utility for synthetic EO data.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
-
-  <a class="project-card" href="{{ '/poster.html' | relative_url }}">
-    <span class="project-card__tag">Poster</span>
-    <p class="project-card__title">Research Poster</p>
-    <p class="project-card__desc">A visual summary of the data-quality and generative-augmentation research programme.</p>
-    <span class="project-card__arrow">View poster →</span>
-  </a>
 </div>
 
 ## <span class="section-title">🎓 Education</span>
