@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Benchmarking the Alignment of Data-Quality Metrics
+title: Grounding Synthetic Data Generation With Vision and Language Models
 ---
 
 
