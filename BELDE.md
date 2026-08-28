@@ -3,67 +3,77 @@ layout: page
 title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for Europe
 ---
 
-<div align="center">
-  <h1>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe</h1>
-  
-  <p>
-    <strong>Ümit Mert Çağlar</strong> &nbsp;&nbsp;&nbsp;&nbsp; <strong>Alptekin Temizel</strong>
-  </p>
-  <p>
-    <em>Graduate School of Informatics, Middle East Technical University, Ankara, Turkey</em>
-  </p>
-  
-  <br>
+# BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe
+**Ümit Mert Çağlar, Alptekin Temizel** | METU, Turkey
 
-  <!-- Quick Links -->
-  <p>
-    <a href="https://github.com/caglarmert/BELDE"><strong>[ Code ]</strong></a> &nbsp;&nbsp;
-    <a href="https://arxiv.org/abs/2606.20909"><strong>[ Paper ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE"><strong>[ BELDE Dataset ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE-K"><strong>[ BELDE-K Dataset ]</strong></a> &nbsp;&nbsp;
-    <a href="https://huggingface.co/datasets/caglarmert/BELDE-CA-NV"><strong>[ BELDE-CA-NV Dataset ]</strong></a>
-  </p>
-</div>
+[![Paper](https://img.shields.io/badge/arXiv-2606.20909-b31b1b.svg)](https://arxiv.org/abs/2606.20909)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/BELDE)
+[![Dataset](https://img.shields.io/badge/Dataset-BELDE-blue.svg)](https://huggingface.co/datasets/caglarmert/BELDE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-<hr>
+> **TL;DR:** We introduce **BELDE**, a continental-scale RGB Earth-observation benchmark built from Sentinel-2 true-color imagery and ESA WorldCover maps, containing 1,088,385 curated 256×256 image-mask pairs across Europe at 10 m resolution. We evaluate 17 segmentation architectures and show that compact hybrid transformers (LALE-S2, 2.61M parameters) retain over 94% of the performance of a 100M-parameter model, while two out-of-domain extensions, BELDE-K (Korea) and BELDE-CA-NV (California-Nevada), reveal significant performance degradation under geographic domain shift.
 
-## Abstract
-<p align="justify">
-Earth observation imagery is fundamental for environmental monitoring, urban planning, disaster assessment, and climate analysis. While multi-spectral sensors are highly capable, true-color (RGB) imagery remains heavily utilized due to power, cost, and deployment constraints across many operational platforms. To address the limitations of existing datasets regarding geographic coverage and scale, this work introduces BELDE, a publicly available benchmark tailored for RGB-based remote sensing semantic segmentation. Constructed from Sentinel-2 images and ESA WorldCover maps, the dataset provides 1,088,385 curated image-mask pairs at a 10 m spatial resolution covering a diverse European footprint.
-</p>
+![BELDE dataset creation and curation pipeline](belde2.jpg)
 
-## Dataset Pipeline
-<p align="justify">
-The dataset is constructed via a fully automated pipeline that aligns true-color images with corresponding land-cover maps. Through rigorous, rule-based data curation and strict filtering criteria, over 1.94 million non-informative, corrupted, or single-class dominated patches were pruned. This ensures an information-dense training set optimized for efficient model distillation.
-</p>
+---
 
-<figure align="center">
-  <img src="belde2.jpg" alt="BELDE dataset creation and curation pipeline" width="100%">
-  <figcaption><b>Figure 1:</b> Automated spatial querying and data curation pipeline for the BELDE dataset.</figcaption>
-</figure>
+## ✨ Key Contributions
 
-## Key Contributions
-* **Scale and Diversity:** The introduction of BELDE, comprising 1,088,385 geo-aligned image-mask pairs across Europe, established via an automated quality filtering pipeline.
-* **Efficiency Under Constraint:** The demonstration of model distillation utility with lightweight architectures, showing that compact networks (e.g., LALE-S2 with 2.61M parameters) achieve competitive segmentation accuracy for resource-constrained edge deployments.
-* **Generalization Benchmarks:** The release of out-of-domain evaluation datasets, BELDE-K (16,607 pairs in the Republic of Korea) and BELDE-CA-NV (88,155 pairs in California-Nevada, USA), to quantify geographic domain shift.
-* **Architectural Evaluation:** A comprehensive benchmark evaluation of 17 semantic segmentation architectures spanning CNN, dense prediction transformer, and lightweight hybrid families.
+* **Large-Scale Curated Dataset:** BELDE, 1,088,385 geo-aligned RGB image-mask pairs across Europe at 10 m resolution, produced by an automated pipeline that prunes over 1.94 million non-informative, corrupted, or single-class dominated patches.
+* **Efficient Model Distillation:** Demonstration that lightweight hybrid architectures (e.g., LALE-S2, 2.61M parameters) retain over 94% of the performance of 100M-parameter models, enabling deployment on bandwidth- and payload-constrained platforms.
+* **Cross-Region Generalization Benchmarks:** Two out-of-domain extensions, BELDE-K (16,607 pairs, Republic of Korea) and BELDE-CA-NV (88,155 pairs, California-Nevada, USA), built with the same pipeline to quantify geographic domain shift.
+* **Architectural Evaluation:** A comprehensive benchmark of 17 semantic segmentation architectures spanning CNN, transformer, and lightweight hybrid families, plus a data-scaling study showing that diffusion-based synthetic augmentation improves segmentation performance beyond full real-data capacity.
 
-## Cross-Region Generalization
+---
+
+## 📊 The BELDE Dataset
+
+BELDE is constructed from Sentinel-2 true-color imagery (TCI) and ESA WorldCover 2021 land-cover maps (77.9% regional label accuracy over Europe), covering 13°W–50°E and 33°N–60°N. The original 11 WorldCover classes are harmonized into 7 (tree, shrub, grass, crop, built-up, barren, water), and patches with missing data or more than 90% water coverage are discarded, pruning 1,941,727 patches in total.
+
+| Dataset | Patches | Classes | Resolution | Patch Size | Multi-spectral |
+|---|---|---|---|---|---|
+| BigEarthNet | 549,488 | 19 | 10m | 120×120 | No |
+| ARAS (Real) | 100,240 | 7 | 10m | 256×256 | No |
+| EuroSAT | 27,000 | 10 | 10m | 64×64 | Yes |
+| FLAIR | 77,762 | 19 | 0.2m | 512×512 | Yes |
+| LoveDA | 5,987 | 7 | 0.3m | 1024×1024 | No |
+| DeepGlobe | 1,146 | 7 | 0.5m | 2448×2448 | Yes |
+| LandCover.ai | 10,674 | 4 | 0.5m | 512×512 | No |
+| YieldSAT | 113,555 | 12 | 20m | Varied | Yes |
+| **BELDE (ours)** | **1,088,385** | **7** | **10m** | **256×256** | **No** |
+| **BELDE-K (ours)** | **16,607** | **7** | **10m** | **256×256** | **No** |
+| **BELDE-CA-NV (ours)** | **88,155** | **7** | **10m** | **256×256** | **No** |
+
+---
+
+## 📈 Semantic Segmentation Results
+
+We evaluated 17 architectures spanning CNN (DeepLabV3, DeepLabV3+, FPN, LinkNet, PSPNet, UNet, UNet++), transformer (SegFormer, DeiT3, MaxViT) and lightweight hybrid (EfficientFormer, FastViT, LALE) families, ranging from 1.5M to 117M parameters, all trained under an identical AdamW + Dice-loss protocol.
+
+**Key Takeaways:**
+1. **Transformers Lead, Lightweight Models Compete:** EfficientFormer-L7 (100.3M params) and MaxViT (60.8M params) achieve the highest F1-scores (83.0% and 82.9%), while LALE-S2 reaches 78.2% F1 with only 2.61M parameters — retaining 94.2% of peak performance at 38.4× fewer parameters.
+2. **In-Domain Performance Nears a Label-Noise Ceiling:** The narrow 1.5% IoU spread between CNN and transformer baselines suggests in-domain accuracy is bounded by the ~77.9% accuracy of the underlying WorldCover pseudo-labels.
+3. **Shrub is the Hardest Class:** Spectrally homogeneous classes (tree, water) segment well across all models, while the rare and visually ambiguous shrub class remains the most challenging under RGB-only observation.
+
+---
+
+## 🌍 Cross-Region Generalization
+
 <figure align="center">
   <img src="belde1.jpg" alt="Cross region generalization" width="85%">
-  <figcaption><b>Figure 2:</b> Evaluation framework assessing out-of-distribution performance under geographic domain shift.</figcaption>
+  <figcaption><b>Figure:</b> Experimental setup training on BELDE (Europe) and evaluating zero-shot on BELDE-K (Korea) and BELDE-CA-NV (California-Nevada).</figcaption>
 </figure>
 
-<p align="justify">
-To facilitate systematic evaluation of domain shift, models trained on the primary European BELDE dataset were tested on geographically distinct benchmarks without overlap. Performance evaluations on BELDE-K and BELDE-CA-NV indicate a consistent degradation under geographic domain shift across all architectural families. This highlights that RGB-only segmentation models rely heavily on region-specific spatial and textural cues, emphasizing the necessity of geographically diverse benchmarks for robust Earth observation systems.
-</p>
+Models trained exclusively on BELDE (Europe) were evaluated zero-shot on BELDE-K and BELDE-CA-NV. All architectures show consistent performance degradation under domain shift — MaxViT and EfficientFormer-L7 lead on both extensions (58.2%/58.3% F1 on BELDE-K, 66.4%/66.2% F1 on BELDE-CA-NV), while LALE models trade some accuracy for stability and efficiency. This confirms that RGB-only segmentation models rely heavily on region-specific spatial and textural cues, motivating geographically diverse benchmarks like BELDE.
 
-<hr>
+We further evaluated data scaling and diffusion-based synthetic augmentation on a BELDE subset: real-data scaling alone reaches 74.66% F1 at full capacity (80,000 pairs), and adding synthetic samples from a latent diffusion model conditioned on segmentation masks improves this further to 75.68% F1 (+1.02%), showing that generative augmentation provides utility beyond real-data availability.
+
+---
 
 ## Dataset Availability and Reproducibility
-<p align="justify">
-The datasets and software framework created and used throughout this work are publicly available under the Creative Commons Attribution 4.0 International license (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>).
-</p>
+
+The datasets and software framework created and used throughout this work are publicly available under the Creative Commons Attribution 4.0 International license ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)).
 
 | Resource | Link |
 | :--- | :--- |
@@ -71,3 +81,18 @@ The datasets and software framework created and used throughout this work are pu
 | **BELDE-K** | [datasets/caglarmert/BELDE-K](https://huggingface.co/datasets/caglarmert/BELDE-K) |
 | **BELDE-CA-NV** | [datasets/caglarmert/BELDE-CA-NV](https://huggingface.co/datasets/caglarmert/BELDE-CA-NV) |
 | **Source Code** | [github.com/caglarmert/BELDE](https://github.com/caglarmert/BELDE) |
+
+---
+
+## 📜 Citation
+
+If you find this dataset or codebase useful in your research, please consider citing:
+
+```bibtex
+@article{caglar2026belde,
+  title={BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe},
+  author={Caglar, Umit Mert and Temizel, Alptekin},
+  journal={arXiv preprint arXiv:2606.20909},
+  year={2026}
+}
+```

@@ -54,6 +54,13 @@ My research focus is on **computer vision** and **generative models**, specifica
     <p class="project-card__desc">A human-perception study aligning automated quality metrics, human judgment, and downstream segmentation utility for synthetic EO data.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
+
+  <a class="project-card" href="{{ '/LALE.html' | relative_url }}">
+    <span class="project-card__tag">Model</span>
+    <p class="project-card__title">LALE</p>
+    <p class="project-card__desc">A lightweight hybrid convolution-transformer segmentation architecture reaching within 2.6 F1 of the best baseline at a fraction of the compute.</p>
+    <span class="project-card__arrow">Read more →</span>
+  </a>
 </div>
 
 ## <span class="section-title">🎓 Education</span>
@@ -99,8 +106,10 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 <ul class="pub-list">
 <li>Grounding Synthetic Data Generation With Vision and Language Models, CVPR 2026 Synthetic Data for Computer Vision Workshop — <a href="https://arxiv.org/abs/2603.09625">Paper</a> · <a href="{{ '/ARAS400k.html' | relative_url }}">Project Page</a></li>
-<li>LALE: Lightweight-Transformer Architecture for Land-Cover Estimation — <a href="https://arxiv.org/abs/2606.02092">Paper</a></li>
+<li>LALE: Lightweight-Transformer Architecture for Land-Cover Estimation — <a href="https://arxiv.org/abs/2606.02092">Paper</a> · <a href="{{ '/LALE.html' | relative_url }}">Project Page</a></li>
 <li>ARAS400k: A Large-Scale Remote Sensing Dataset Augmented with Synthetic Data for Segmentation and Captioning — <a href="https://zenodo.org/records/18890661">Dataset</a> · <a href="{{ '/ARAS400k.html' | relative_url }}">Project Page</a></li>
+<li>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe — <a href="https://arxiv.org/abs/2606.20909">Paper</a> · <a href="{{ '/BELDE.html' | relative_url }}">Project Page</a></li>
+<li>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation — <a href="{{ '/Benchmarking.html' | relative_url }}">Project Page</a></li>
 <li>Colorectal cancer segmentation with adaptive augmentation and multiresolution ensemble models, 18th International Conference on Machine Vision (ICMV 2025) — <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14114/141140I/Colorectal-cancer-segmentation-with-adaptive-augmentation-and-multiresolution-ensemble-models/10.1117/12.3096537.short">Paper</a></li>
 <li>Progressive Disease Image Generation with Ordinal-Aware Diffusion Models, Diagnostics 2025 — <a href="https://www.mdpi.com/2075-4418/15/20/2558">Paper</a></li>
 <li>Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images: from GIGA to Mini Challenge, IEEE International Conference on Image Processing Workshops (ICIPW) 2025 — <a href="https://ieeexplore.ieee.org/abstract/document/11385990">Paper</a></li>

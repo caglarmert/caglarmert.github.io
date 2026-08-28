@@ -8,6 +8,7 @@ title: Grounding Synthetic Data Generation With Vision and Language Models
 **ECCV 2026** | [Ümit Mert Çağlar](mailto:mecaglar@metu.edu.tr), [Alptekin Temizel](mailto:atemizel@metu.edu.tr) | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2603.09625-b31b1b.svg)](https://arxiv.org/abs/2603.09625)
+[![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/ARAS400k)
 [![Dataset](https://img.shields.io/badge/Dataset-ARAS400k-blue.svg)](https://zenodo.org/records/18890661)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
