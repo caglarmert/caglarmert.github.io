@@ -110,11 +110,10 @@ We support multiple modalities for rich metadata creation:
 If you find this dataset or codebase useful in your research, please consider citing:
 
 ```bibtex
-@article{ccauglar2026grounding,
+@article{caglar2026grounding,
   title={Grounding Synthetic Data Generation With Vision and Language Models},
-  author={{\c{C}}a{\u{g}}lar, {\"U}mit Mert and Temizel, Alptekin},
+  author={Caglar, Umit Mert and Temizel, Alptekin},
   journal={arXiv preprint arXiv:2603.09625},
   year={2026}
 }
-
 ```
