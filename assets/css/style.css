@@ -1,46 +1,5 @@
 :root {
-  --bg: #fbfcfd;
-  --surface: #ffffff;
-  --ink: #16202b;
-  --ink-soft: #4b5768;
-  --border: #e2e8ee;
-  --accent: #0092bc;
-  --accent-ink: #006a8a;
-  --accent-soft: #e2f4fa;
-  --red: #ef3340;
-  --red-ink: #c81f2c;
-  --red-soft: #fdeaec;
-  --green: #509e2f;
-  --green-ink: #3c7a22;
-  --green-soft: #eaf5e5;
-  --shadow: 0 1px 2px rgba(16, 24, 32, 0.04), 0 8px 24px rgba(16, 24, 32, 0.06);
-  --radius: 14px;
-  --max: 860px;
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #0f151c;
-    --surface: #161e27;
-    --ink: #eef2f5;
-    --ink-soft: #a4b0bd;
-    --border: #29333e;
-    --accent: #34c1f0;
-    --accent-ink: #7fdcf7;
-    --accent-soft: #103240;
-    --red: #ff6570;
-    --red-ink: #ff929a;
-    --red-soft: #3a151a;
-    --green: #86cf5f;
-    --green-ink: #a9e087;
-    --green-soft: #17280f;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme="dark"] {
+  /* Dark theme is the default. */
   --bg: #0f151c;
   --surface: #161e27;
   --ink: #eef2f5;
@@ -56,7 +15,28 @@
   --green-ink: #a9e087;
   --green-soft: #17280f;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --radius: 14px;
+  --max: 860px;
   color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #fbfcfd;
+  --surface: #ffffff;
+  --ink: #16202b;
+  --ink-soft: #4b5768;
+  --border: #e2e8ee;
+  --accent: #0092bc;
+  --accent-ink: #006a8a;
+  --accent-soft: #e2f4fa;
+  --red: #ef3340;
+  --red-ink: #c81f2c;
+  --red-soft: #fdeaec;
+  --green: #509e2f;
+  --green-ink: #3c7a22;
+  --green-soft: #eaf5e5;
+  --shadow: 0 1px 2px rgba(16, 24, 32, 0.04), 0 8px 24px rgba(16, 24, 32, 0.06);
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -154,14 +134,11 @@ a:hover { text-decoration: underline; }
 .theme-toggle:hover { border-color: var(--accent); transform: translateY(-1px); }
 .theme-toggle:active { transform: translateY(0); }
 
-.theme-toggle .icon-moon { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-:root[data-theme="dark"] .theme-toggle .icon-moon { display: inline; }
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: none; }
-  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: inline; }
-}
+/* Dark is the default, so the moon (dark) icon shows unless light is chosen. */
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: inline; }
+:root[data-theme="light"] .theme-toggle .icon-sun { display: inline; }
+:root[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
 /* ---------- Layout shell ---------- */
 main {
