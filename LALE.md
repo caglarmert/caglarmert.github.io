@@ -13,7 +13,7 @@ title: LALE - Lightweight-Transformer Architecture for Land-Cover Estimation
 
 > **TL;DR:** We introduce **LALE**, a hybrid convolution-transformer segmentation architecture that bifurcates its encoder by resolution, lightweight ConvMixer stages handle high-resolution local features, while transformer stages confine the quadratic cost of self-attention to deep, downsampled feature maps. Combined with an all-MLP multi-scale decoder and efficient RMSNorm/StarReLU operations, our smallest variant (1.6M parameters) reaches within 2.6 F1 points of the best baseline (UPerNet) on ARAS400k while using 4.5× fewer parameters, 7× less storage and 17× fewer GMACs.
 
-![LALE architecture: convolution stem, convolution mixers, transformer blocks and multi-scale decoder](lale2.png)
+![LALE architecture: convolution stem, convolution mixers, transformer blocks and multi-scale decoder](lale2.jpg)
 
 ---
 

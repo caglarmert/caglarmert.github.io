@@ -15,7 +15,7 @@ title: Grounding Synthetic Data Generation With Vision and Language Models
 
 > **TL;DR:** We introduce **ARAS400k**, a large-scale remote sensing dataset containing 100k real and 300k synthetic images paired with semantic segmentation maps and over 2 million descriptive captions. Our vision-language grounded framework proves that combining real data with synthetic data consistently outperforms real-data baselines in semantic segmentation, effectively solving class-imbalance for under-represented categories.
 
-![ARAS400k Pipeline Overview](GDA2.PNG)
+![ARAS400k Pipeline Overview](GDA2.jpg)
 
 ---
 
@@ -66,7 +66,7 @@ We tested multiple segmentation architectures (U-Net, U-Net++, PAN, DeepLabV3+, 
 
 Our fully open-sourced pipeline spans data acquisition, generation, captioning, and segmentation. 
 
-![Data Generation Pipeline](GDA1.PNG)
+![Data Generation Pipeline](GDA1.jpg)
 
 ### Docker Environments
 For stable reproducibility, pull our curated environments:

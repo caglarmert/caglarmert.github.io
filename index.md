@@ -39,21 +39,21 @@ My research focus is on **computer vision** and **generative models**, specifica
 
 <div class="project-grid">
   <a class="project-card" href="{{ '/ARAS400k.html' | relative_url }}">
-    <span class="project-card__tag">Dataset · CVPR Workshop 2026</span>
+    <span class="project-card__tag">Dataset · CVPR 2026</span>
     <p class="project-card__title">ARAS400k</p>
     <p class="project-card__desc">400k+ real &amp; synthetic remote sensing images with segmentation maps and 2M+ vision-language grounded captions.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 
   <a class="project-card" href="{{ '/BELDE.html' | relative_url }}">
-    <span class="project-card__tag">Dataset · ECCV 2026 Workshop</span>
+    <span class="project-card__tag">Dataset · ECCV 2026</span>
     <p class="project-card__title">BELDE</p>
     <p class="project-card__desc">1.08M curated image-mask pairs for RGB Earth-observation land-cover segmentation across Europe, with out-of-domain benchmarks.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 
   <a class="project-card" href="{{ '/Benchmarking.html' | relative_url }}">
-    <span class="project-card__tag">Study · ECCV 2026 Workshop</span>
+    <span class="project-card__tag">Study · ECCV 2026</span>
     <p class="project-card__title">Benchmarking Data-Quality Metrics</p>
     <p class="project-card__desc">A human-perception study aligning automated quality metrics, human judgment, and downstream segmentation utility for synthetic EO data.</p>
     <span class="project-card__arrow">Read more →</span>

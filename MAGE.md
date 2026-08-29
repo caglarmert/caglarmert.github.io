@@ -12,7 +12,7 @@ title: Exploring Challenges in Deep Learning of Single-Station Ground Motion Rec
 
 > **TL;DR:** Deep learning models for estimating an earthquake's epicentral distance from a single seismic station are usually fed auxiliary Primary/Secondary (P/S) wave arrival times alongside the raw waveform. We show these models lean almost entirely on that auxiliary signal rather than learning genuinely "deep" representations from the waveform itself: adding P/S phase information cuts L1 error by 2-4x across every architecture and dataset we tested, and the P/S time difference correlates with epicentral distance at Pearson r = 0.956.
 
-![Overall system architecture: 3-channel waveform (optionally with a P/S channel) through a ResNet or TCN encoder into dense layers predicting epicentral distance](eq_models.png)
+![Overall system architecture: 3-channel waveform (optionally with a P/S channel) through a ResNet or TCN encoder into dense layers predicting epicentral distance](eq_models.jpg)
 
 ---
 
@@ -36,7 +36,7 @@ title: Exploring Challenges in Deep Learning of Single-Station Ground Motion Rec
 Both datasets are filtered to events within 110 km of a station with SNR ≥ 25 dB, following the protocol of prior single-station studies. Each record contains 60 seconds of 3-channel (N-S, E-W, Up-Down) accelerometer data at 100 Hz, with labeled P- and S-wave arrival times.
 
 <figure align="center">
-  <img src="eq_waveform.png" alt="Sample waveform record with P and S phase arrival markers" width="80%">
+  <img src="eq_waveform.jpg" alt="Sample waveform record with P and S phase arrival markers" width="80%">
   <figcaption><b>Figure:</b> A sample recorded event from STEAD, station at 39.53, -121.46 (Columbia, California). Primary (solid) and Secondary (dashed) wave arrival times are marked.</figcaption>
 </figure>
 

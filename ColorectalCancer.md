@@ -12,7 +12,7 @@ title: Colorectal Cancer Segmentation with Adaptive Augmentation and Multi-Resol
 
 > **TL;DR:** We present an automated whole-slide segmentation pipeline for colorectal cancer tumor grading (grades 1-3 and normal mucosa), combining dense prediction transformers, LLM-guided adaptive augmentation, multi-resolution soft-voting ensembles, and mask post-processing. On the CCTGS dataset, this raises the F1 score from a 62.92 baseline (Swin Transformer) to 69.84.
 
-![Overall flowchart of the segmentation pipeline: multi-resolution patching, encoder-decoder training with LLM-guided adaptive augmentation, and mask decoding](cc_flowchart.png)
+![Overall flowchart of the segmentation pipeline: multi-resolution patching, encoder-decoder training with LLM-guided adaptive augmentation, and mask decoding](cc_flowchart.jpg)
 
 ---
 
@@ -49,7 +49,7 @@ On the Colorectal Cancer Tumor Grade Segmentation (CCTGS) dataset (103 whole-sli
 3. **Ensembling Compounds Gains:** Soft-voting across multi-resolution models, followed by lightweight post-processing, adds +2.45 F1 over the best single-scale model at no extra training cost.
 
 <figure align="center">
-  <img src="cc_overlay.png" alt="Class probability heatmaps for five classes alongside the final prediction mask" width="85%">
+  <img src="cc_overlay.jpg" alt="Class probability heatmaps for five classes alongside the final prediction mask" width="85%">
   <figcaption><b>Figure:</b> Class-activation heatmaps for background, tumor grades 1-3, and normal mucosa, alongside the final segmentation mask on a sample histopathology image.</figcaption>
 </figure>
 
