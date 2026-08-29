@@ -4,7 +4,7 @@ title: Benchmarking the Alignment of Data-Quality Metrics
 ---
 
 # Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation
-**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
+**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2606.25128-b31b1b.svg)](https://arxiv.org/abs/2606.25128)
 [![Dataset](https://img.shields.io/badge/Datasets-ARAS400k_%7C_BELDE-blue.svg)](https://huggingface.co/caglarmert)
@@ -17,7 +17,7 @@ title: Benchmarking the Alignment of Data-Quality Metrics
 
 ---
 
-## ✨ Key Contributions
+## Key Contributions
 
 * **Pitfalls of Automated Data Pruning:** Standard latent-space metrics exhibit high volatility under spatial augmentations, proving them unreliable for automated data pruning or synthetic quality assessment.
 * **Human Perception Study:** A four-stage study with 95 participants (88 retained after quality-control filtering) and 5,768 total responses, quantifying recognition accuracy, visual preference, and cognitive load to provide a human baseline for generative data quality.
@@ -89,7 +89,7 @@ The datasets used throughout this work are publicly available under the Creative
 
 ---
 
-## 📜 Citation
+## Citation
 
 If you find this work useful in your research, please consider citing:
 

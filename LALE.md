@@ -4,7 +4,7 @@ title: LALE - Lightweight-Transformer Architecture for Land-Cover Estimation
 ---
 
 # LALE: Lightweight-Transformer Architecture for Land-Cover Estimation
-**ICMV 2026** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
+**ICMV 2026** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2606.02092-b31b1b.svg)](https://arxiv.org/abs/2606.02092)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/LALE)
@@ -17,7 +17,7 @@ title: LALE - Lightweight-Transformer Architecture for Land-Cover Estimation
 
 ---
 
-## ✨ Key Contributions
+## Key Contributions
 
 * **Resolution-Bifurcated Hybrid Encoder:** A lightweight attention-convolution hybrid hierarchical architecture where ConvMixer blocks handle high-resolution local feature extraction (stages 1–2) and transformer blocks handle low-resolution global context (stages 3–4), confining self-attention's O(N²) cost to the smallest feature maps.
 * **Lightweight Multi-Scale Decoder:** An all-MLP decoder that fuses multi-scale features via pointwise convolutions and bilinear upsampling, avoiding parameter-heavy upsampling heads.
@@ -26,13 +26,13 @@ title: LALE - Lightweight-Transformer Architecture for Land-Cover Estimation
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 LALE bifurcates its four-stage encoder by resolution: a convolutional stem (two 3×3 stride-2 convolutions with RMSNorm and StarReLU) reduces the input by a factor of four, followed by two ConvMixer stages for local feature extraction and two transformer stages (Multi-Head Self-Attention + ConvMLP) for global context modeling at the deepest, lowest-resolution feature maps. A lightweight multi-scale decoder projects each stage's features to a unified 128-channel dimension, upsamples and concatenates them, and predicts per-pixel class logits through a final 1×1 convolution.
 
 ---
 
-## 📈 Results on ARAS400k
+## Results on ARAS400k
 
 We benchmark LALE against CNN baselines (EfficientNet-backboned DeepLabV3, DeepLabV3+, FPN, LinkNet, PAN, UNet, UNet++, UPerNet, SegFormer) and dense-prediction transformers (EfficientFormer, DeiT3, MaxViT, FastViT) on the [ARAS400k](ARAS400k.html) segmentation benchmark.
 
@@ -57,7 +57,7 @@ To test whether the resolution-bifurcated design generalizes beyond remote sensi
 
 ---
 
-## 📜 Citation
+## Citation
 
 If you find this work useful in your research, please consider citing:
 

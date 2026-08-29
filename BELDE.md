@@ -4,7 +4,7 @@ title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for E
 ---
 
 # BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe
-**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
+**ECCV 2026 (Workshop)** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2606.20909-b31b1b.svg)](https://arxiv.org/abs/2606.20909)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/BELDE)
@@ -18,7 +18,7 @@ title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for E
 
 ---
 
-## ✨ Key Contributions
+## Key Contributions
 
 * **Large-Scale Curated Dataset:** BELDE, 1,088,385 geo-aligned RGB image-mask pairs across Europe at 10 m resolution, produced by an automated pipeline that prunes over 1.94 million non-informative, corrupted, or single-class dominated patches.
 * **Efficient Model Distillation:** Demonstration that lightweight hybrid architectures (e.g., LALE-S2, 2.61M parameters) retain over 94% of the performance of 100M-parameter models, enabling deployment on bandwidth- and payload-constrained platforms.
@@ -27,7 +27,7 @@ title: BELDE - Building a Large-scale Earth-observation Land-cover Dataset for E
 
 ---
 
-## 📊 The BELDE Dataset
+## The BELDE Dataset
 
 BELDE is constructed from Sentinel-2 true-color imagery (TCI) and ESA WorldCover 2021 land-cover maps (77.9% regional label accuracy over Europe), covering 13°W–50°E and 33°N–60°N. The original 11 WorldCover classes are harmonized into 7 (tree, shrub, grass, crop, built-up, barren, water), and patches with missing data or more than 90% water coverage are discarded, pruning 1,941,727 patches in total.
 
@@ -47,7 +47,7 @@ BELDE is constructed from Sentinel-2 true-color imagery (TCI) and ESA WorldCover
 
 ---
 
-## 📈 Semantic Segmentation Results
+## Semantic Segmentation Results
 
 We evaluated 17 architectures spanning CNN (DeepLabV3, DeepLabV3+, FPN, LinkNet, PSPNet, UNet, UNet++), transformer (SegFormer, DeiT3, MaxViT) and lightweight hybrid (EfficientFormer, FastViT, LALE) families, ranging from 1.5M to 117M parameters, all trained under an identical AdamW + Dice-loss protocol.
 
@@ -58,7 +58,7 @@ We evaluated 17 architectures spanning CNN (DeepLabV3, DeepLabV3+, FPN, LinkNet,
 
 ---
 
-## 🌍 Cross-Region Generalization
+## Cross-Region Generalization
 
 <figure align="center">
   <img src="belde1.jpg" alt="Cross region generalization" width="85%">
@@ -84,7 +84,7 @@ The datasets and software framework created and used throughout this work are pu
 
 ---
 
-## 📜 Citation
+## Citation
 
 If you find this dataset or codebase useful in your research, please consider citing:
 

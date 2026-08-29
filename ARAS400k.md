@@ -5,7 +5,7 @@ title: Grounding Synthetic Data Generation With Vision and Language Models
 
 
 # Grounding Synthetic Data Generation With Vision and Language Models
-**ECCV 2026** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=tr)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
+**ECCV 2026** | [Ümit Mert Çağlar](https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener" title="ORCID: 0000-0002-0391-3847"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a>, [Alptekin Temizel](https://scholar.google.com/citations?user=3grTeasAAAAJ&hl=en)<a class="orcid-link" href="https://orcid.org/0000-0001-6082-2573" target="_blank" rel="noopener" title="ORCID: 0000-0001-6082-2573"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="ORCID iD"></a> | METU, Turkey
 
 [![Paper](https://img.shields.io/badge/arXiv-2603.09625-b31b1b.svg)](https://arxiv.org/abs/2603.09625)
 [![Code](https://img.shields.io/badge/Code-GitHub-181717.svg?logo=github)](https://github.com/caglarmert/ARAS400k)
@@ -19,7 +19,7 @@ title: Grounding Synthetic Data Generation With Vision and Language Models
 
 ---
 
-## ✨ Key Contributions
+## Key Contributions
 
 * **Large-Scale Multi-Modal Dataset:** 400,240 total images (100k real, 300k synthetic) paired with high-quality segmentation maps and descriptive captions.
 * **Context-Aware Captioning Framework:** An automated pipeline utilizing composition statistics and vision-language foundation models (Gemma3, Qwen3-VL) to generate highly descriptive, non-redundant captions.
@@ -28,7 +28,7 @@ title: Grounding Synthetic Data Generation With Vision and Language Models
 
 ---
 
-## 📊 The ARAS400k Dataset
+## The ARAS400k Dataset
 
 Traditional remote sensing datasets are limited in scale and suffer from high caption redundancy (often >70%). ARAS400k scales the volume while dramatically reducing repetition through our hybrid captioning approach.
 
@@ -51,7 +51,7 @@ Traditional remote sensing datasets are limited in scale and suffer from high ca
 
 ---
 
-## 📈 Experimental Highlights
+## Experimental Highlights
 
 We tested multiple segmentation architectures (U-Net, U-Net++, PAN, DeepLabV3+, SegFormer, FPN). 
 
@@ -62,7 +62,7 @@ We tested multiple segmentation architectures (U-Net, U-Net++, PAN, DeepLabV3+, 
 
 ---
 
-## 🛠️ Pipeline & Reproducibility 
+## Pipeline & Reproducibility 
 
 Our fully open-sourced pipeline spans data acquisition, generation, captioning, and segmentation. 
 
@@ -106,7 +106,7 @@ We support multiple modalities for rich metadata creation:
 
 ---
 
-## 📜 Citation
+## Citation
 
 If you find this dataset or codebase useful in your research, please consider citing:
 
