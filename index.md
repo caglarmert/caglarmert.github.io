@@ -18,9 +18,9 @@ description: PhD Student & Research Assistant at METU Graduate School of Informa
   <a href="https://linkedin.com/in/mertcaglar" target="_blank" rel="noopener">LinkedIn</a>
   <a href="https://hub.docker.com/repositories/mertcaglar" target="_blank" rel="noopener">Docker Hub</a>
   <a href="https://scholar.google.com/citations?user=1bUVmLsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
-  <a href="mailto:mert.caglar@metu.edu.tr">mert.caglar@metu.edu.tr</a>
+  <a href="mailto:mert.caglar@metu.edu.tr">Mail</a>
   <a href="https://orcid.org/0000-0002-0391-3847" target="_blank" rel="noopener">ORCID</a>
-  <a href="https://avesis.metu.edu.tr/mecaglar" target="_blank" rel="noopener">METU AVESIS</a>
+  <a href="https://avesis.metu.edu.tr/mecaglar" target="_blank" rel="noopener">AVESIS</a>
 </div>
 
 <section class="panel" markdown="1">
@@ -63,6 +63,20 @@ My research focus is on **computer vision** and **generative models**, specifica
     <span class="project-card__tag">Model · ICMV 2026</span>
     <p class="project-card__title">LALE</p>
     <p class="project-card__desc">A lightweight hybrid convolution-transformer segmentation architecture reaching within 2.6 F1 of the best baseline at a fraction of the compute.</p>
+    <span class="project-card__arrow">Read more →</span>
+  </a>
+
+  <a class="project-card" href="{{ '/ColorectalCancer.html' | relative_url }}">
+    <span class="project-card__tag">Study · ICMV 2025</span>
+    <p class="project-card__title">Colorectal Cancer Segmentation</p>
+    <p class="project-card__desc">Adaptive LLM-guided augmentation and multi-resolution ensemble models raising CRC tumor-grade segmentation F1 from 62.9 to 69.8.</p>
+    <span class="project-card__arrow">Read more →</span>
+  </a>
+
+  <a class="project-card" href="{{ '/MAGE.html' | relative_url }}">
+    <span class="project-card__tag">Study · Earth Science Informatics 2025</span>
+    <p class="project-card__title">Single-Station Ground Motion</p>
+    <p class="project-card__desc">Exposing how deep learning models for epicentral distance estimation rely on auxiliary P/S phase timing rather than deep waveform features.</p>
     <span class="project-card__arrow">Read more →</span>
   </a>
 </div>
@@ -124,7 +138,8 @@ My research focus is on **computer vision** and **generative models**, specifica
 <li>ARAS400k: A Large-Scale Remote Sensing Dataset Augmented with Synthetic Data for Segmentation and Captioning - <a href="https://zenodo.org/records/18890661">Dataset</a> · <a href="{{ '/ARAS400k.html' | relative_url }}">Project Page</a></li>
 <li>BELDE: Building a Large-scale Earth-observation Land-cover Dataset for Europe, ECCV 2026 Workshop - <a href="https://arxiv.org/abs/2606.20909">Paper</a> · <a href="{{ '/BELDE.html' | relative_url }}">Project Page</a></li>
 <li>Benchmarking the Alignment of Data-Quality Metrics, Human Judgment and Land-Cover Segmentation Performance for Earth Observation, ECCV 2026 Workshop - <a href="https://arxiv.org/abs/2606.25128">Paper</a> · <a href="{{ '/Benchmarking.html' | relative_url }}">Project Page</a></li>
-<li>Colorectal cancer segmentation with adaptive augmentation and multiresolution ensemble models, 18th International Conference on Machine Vision (ICMV 2025) - <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14114/141140I/Colorectal-cancer-segmentation-with-adaptive-augmentation-and-multiresolution-ensemble-models/10.1117/12.3096537.short">Paper</a></li>
+<li>Exploring Challenges in Deep Learning of Single-Station Ground Motion Records, Earth Science Informatics 2025 - <a href="{{ '/MAGE.html' | relative_url }}">Project Page</a></li>
+<li>Colorectal cancer segmentation with adaptive augmentation and multiresolution ensemble models, 18th International Conference on Machine Vision (ICMV 2025) - <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/14114/141140I/Colorectal-cancer-segmentation-with-adaptive-augmentation-and-multiresolution-ensemble-models/10.1117/12.3096537.short">Paper</a> · <a href="{{ '/ColorectalCancer.html' | relative_url }}">Project Page</a></li>
 <li>Progressive Disease Image Generation with Ordinal-Aware Diffusion Models, Diagnostics 2025 - <a href="https://www.mdpi.com/2075-4418/15/20/2558">Paper</a></li>
 <li>Colorectal Cancer Tumor Grade Segmentation in Digital Histopathology Images: from GIGA to Mini Challenge, IEEE International Conference on Image Processing Workshops (ICIPW) 2025 - <a href="https://ieeexplore.ieee.org/abstract/document/11385990">Paper</a></li>
 <li>Class distance weighted cross entropy loss for classification of disease severity, Expert Systems with Applications 2025 - <a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417424032391">Paper</a></li>
