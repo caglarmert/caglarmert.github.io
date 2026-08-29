@@ -41,7 +41,20 @@ Traditional remote sensing datasets are limited in scale and suffer from high ca
 
 **Dataset Download:** Available on [Zenodo](https://zenodo.org/records/18890661). 
 
+### Captioning Model Comparison
+
+We compare three captioning modalities (text-only, vision-only, hybrid) across three foundation models on the full ARAS400k, real-only, and synthetic-only subsets. Hybrid models, which combine visual content with segmentation-derived composition statistics, consistently yield the highest caption variety and lowest redundancy.
+
+| Model | Method | Unique Captions | Redundancy | CLIPScore |
+|---|---|---|---|---|
+| Qwen3-4B | Text | 214,319 | 46.45% | 26.34 |
+| Gemma3-4B | Vision | 396,878 | 0.84% | 31.06 |
+| Qwen3-VL-8B | Vision | 359,997 | 10.05% | 31.79 |
+| Gemma3-4B | Hybrid | 398,339 | **0.47%** | 30.26 |
+| Qwen3-VL-8B | Hybrid | 374,570 | 6.41% | 27.88 |
+
 **Verification Hashes (MD5):**
+
 | Filename | MD5 Checksum |
 |---|---|
 | `train.zip` | `95cd5caea68c813fd86888f9cd95b627` |
@@ -53,12 +66,22 @@ Traditional remote sensing datasets are limited in scale and suffer from high ca
 
 ## Experimental Highlights
 
-We tested multiple segmentation architectures (U-Net, U-Net++, PAN, DeepLabV3+, SegFormer, FPN). 
+We tested six segmentation architectures (U-Net, U-Net++, PAN, DeepLabV3, SegFormer, FPN) across seven training configurations, averaging macro F1, IoU, precision, recall, and accuracy over all models.
+
+| Training Configuration | F1 | IoU | Accuracy |
+|---|---|---|---|
+| Real Data only | 76.49 | 64.51 | 84.97 |
+| Synthetic 100k only | 73.16 | 60.82 | 83.21 |
+| Synthetic 300k only | 74.79 | 62.56 | 84.16 |
+| Real + Cond. 80k | 77.56 | 65.86 | 85.87 |
+| **Real + Uncond. 300k** | **77.66** | **65.98** | **86.18** |
+| Real + Uncond. 300k + Cond. 80k | 77.24 | 65.49 | 85.91 |
 
 **Key Takeaways:**
-1. **Synthetic Data is a Viable Alternative:** Models trained exclusively on our 300k synthetic dataset reach highly competitive performance levels, trailing the real-data baseline by only ~2.0 F1 score.
-2. **Augmentation Wins:** Injecting synthetic samples into the real dataset improves overall segmentation performance across the board (e.g., Segformer F1 jumps from 77.09 to 77.80).
-3. **Solving Class Imbalance:** The most significant performance gains occurred in historically under-represented classes (e.g., Shrub and Barren land covers) when utilizing synthetic data augmentation.
+1. **Synthetic Data is a Viable Alternative:** Models trained exclusively on our 300k synthetic dataset reach highly competitive performance levels, trailing the real-data baseline by only ~2.0 F1 score (74.79 vs. 76.49).
+2. **Augmentation Wins:** Injecting unconditional synthetic samples into the real dataset improves overall segmentation performance across the board (e.g., Segformer F1 jumps from 77.09 to 77.80), with **Real + Uncond. 300k** the best overall configuration.
+3. **Solving Class Imbalance:** The most significant performance gains occurred in historically under-represented classes — Shrub F1 improves from 46.82 (real-only mean) to 48.79 with unconditional synthetic augmentation, and Barren from 60.32 to 62.05.
+4. **Compute:** The full study, including architecture search and ablations, totals roughly 3,000 GPU-hours on a single NVIDIA H100, processing about 1,000 images per hour end-to-end.
 
 ---
 

@@ -48,6 +48,8 @@ All patches are 256×256 pixels at 10 m spatial resolution with seven shared lan
   <figcaption><b>Figure:</b> Human perception study screens for (a) data augmentation alignment, (b) utility for downstream tasks, (c) conditional generation preference and (d) data realism scores.</figcaption>
 </figure>
 
+95 participants were recruited across engineering, informatics, and data science departments, of whom 88 were retained after quality-control filtering (5,341 valid responses). 16.8% had prior remote sensing/geospatial experience, 30.5% had some, and 52.7% had none — a deliberately mixed-expertise pool.
+
 To evaluate the alignment between automated quality metrics, human perception, and downstream data utility, the study is structured into four sequential phases:
 
 1. **Augmentation Alignment:** Participants judge whether a baseline image and its transformed variant depict the same scene. Human accuracy stays above 90% for rotation, perspective, flip, and resized-crop, dropping to 79.2% under noise and 56.6% under combined perturbation, even though these same transforms can swing FID from 2.09 to over 100.
@@ -55,9 +57,50 @@ To evaluate the alignment between automated quality metrics, human perception, a
 3. **Conditional Generation Preference:** Given a real image and its segmentation mask, participants pick the most consistent synthetic output. Stable Diffusion trained on ARAS400k (ARAS-CSD) is preferred most (39%), followed by BELDE-CSD (33%) and ARAS-CUGAN (28%).
 4. **Data Realism Scores:** Participants rate individual images on a 5-point Likert scale. The synthetic ARAS-SGAN3 dataset (μ = 3.43) is rated *more* realistic than two of the four real datasets, BELDE (μ = 3.32) and BELDE-CA-NV (μ = 3.09), despite having a substantially worse FID.
 
+### Perceived Scene Understanding by Perturbation
+
+| Transform | Human Accuracy | Avg. Reaction Time |
+|---|---|---|
+| Baseline (none) | 97.13% | 6.35 s |
+| Rotation | 94.05% | 6.42 s |
+| Perspective | 92.22% | 6.94 s |
+| Flip | 91.80% | 6.57 s |
+| Resized Crop | 90.44% | 6.51 s |
+| Noise | 79.20% | 6.04 s |
+| **Combined** | **56.63%** | **8.10 s** |
+
+### Realism Scores (1 = Most Synthetic, 5 = Most Realistic)
+
+| Dataset | Type | Mean (μ) | Median |
+|---|---|---|---|
+| ARAS | Real | 3.54 | 4.0 |
+| ARAS-SGAN3 | Synthetic | 3.43 | 4.0 |
+| BELDE-K | Real | 3.42 | 4.0 |
+| BELDE | Real | 3.32 | 4.0 |
+| ARAS-SGAN3-D | Synthetic | 3.28 | 4.0 |
+| BELDE-CA-NV | Real | 3.09 | 3.0 |
+| ARAS-CUGAN | Synthetic | 2.96 | 3.0 |
+| BELDE-CSD | Synthetic | 2.80 | 3.0 |
+| ARAS-CSD | Synthetic | 2.51 | 2.0 |
+
 ## Downstream Utility vs. Metrics and Perception
 
 Augmenting the real ARAS400k baseline with CUGAN-generated data degrades FID from 2.09 to 21.27, yet paradoxically *improves* downstream segmentation F1 from 76.5% to 77.6%. Likewise, participants rated BELDE-K as more realistic than BELDE-CA-NV (3.42 vs. 3.09 HPQS), yet segmentation models score substantially higher F1 on BELDE-CA-NV (66.2%) than BELDE-K (58.3%). Neither automatic metrics nor human perception reliably predicts downstream utility on their own.
+
+| Train | Test | FID ↓ | HPQS ↑ | F1 (%) ↑ |
+|---|---|---|---|---|
+| ARAS | ARAS | 2.09 | 3.54 | 76.5 |
+| SGAN3 | ARAS | 16.85 | 3.43 | 73.2 |
+| SGAN3-D | ARAS | 16.68 | 3.28 | 74.8 |
+| CUGAN | ARAS | 72.23 | 2.96 | 54.3 |
+| ARAS + SGAN3 | ARAS | 12.12 | 3.49 | **77.7** |
+| ARAS + CUGAN | ARAS | 21.27 | 3.25 | 77.6 |
+| ARAS + SGAN3 + CUGAN | ARAS | 13.19 | 3.31 | 77.2 |
+| BELDE | BELDE | 0.36 | 3.32 | 83.0 |
+| BELDE | BELDE-CA-NV | 20.4 | 3.09 | 66.2 |
+| BELDE | BELDE-K | 41.6 | 3.42 | 58.3 |
+
+A pruning pipeline relying strictly on isolated FID thresholds would have discarded CUGAN outright (worst FID and worst realism score of any dataset) — forfeiting a real, measurable +1.1% F1 improvement it delivers when blended with real data.
 
 ## Guidelines for Data-Centric Synthetic Curation
 
