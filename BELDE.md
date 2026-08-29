@@ -52,7 +52,7 @@ BELDE is constructed from Sentinel-2 true-color imagery (TCI) and ESA WorldCover
 We evaluated 17 architectures spanning CNN (DeepLabV3, DeepLabV3+, FPN, LinkNet, PSPNet, UNet, UNet++), transformer (SegFormer, DeiT3, MaxViT) and lightweight hybrid (EfficientFormer, FastViT, LALE) families, ranging from 1.5M to 117M parameters, all trained under an identical AdamW + Dice-loss protocol.
 
 **Key Takeaways:**
-1. **Transformers Lead, Lightweight Models Compete:** EfficientFormer-L7 (100.3M params) and MaxViT (60.8M params) achieve the highest F1-scores (83.0% and 82.9%), while LALE-S2 reaches 78.2% F1 with only 2.61M parameters — retaining 94.2% of peak performance at 38.4× fewer parameters.
+1. **Transformers Lead, Lightweight Models Compete:** EfficientFormer-L7 (100.3M params) and MaxViT (60.8M params) achieve the highest F1-scores (83.0% and 82.9%), while LALE-S2 reaches 78.2% F1 with only 2.61M parameters, retaining 94.2% of peak performance at 38.4× fewer parameters.
 2. **In-Domain Performance Nears a Label-Noise Ceiling:** The narrow 1.5% IoU spread between CNN and transformer baselines suggests in-domain accuracy is bounded by the ~77.9% accuracy of the underlying WorldCover pseudo-labels.
 3. **Shrub is the Hardest Class:** Spectrally homogeneous classes (tree, water) segment well across all models, while the rare and visually ambiguous shrub class remains the most challenging under RGB-only observation.
 
@@ -65,7 +65,7 @@ We evaluated 17 architectures spanning CNN (DeepLabV3, DeepLabV3+, FPN, LinkNet,
   <figcaption><b>Figure:</b> Experimental setup training on BELDE (Europe) and evaluating zero-shot on BELDE-K (Korea) and BELDE-CA-NV (California-Nevada).</figcaption>
 </figure>
 
-Models trained exclusively on BELDE (Europe) were evaluated zero-shot on BELDE-K and BELDE-CA-NV. All architectures show consistent performance degradation under domain shift — MaxViT and EfficientFormer-L7 lead on both extensions (58.2%/58.3% F1 on BELDE-K, 66.4%/66.2% F1 on BELDE-CA-NV), while LALE models trade some accuracy for stability and efficiency. This confirms that RGB-only segmentation models rely heavily on region-specific spatial and textural cues, motivating geographically diverse benchmarks like BELDE.
+Models trained exclusively on BELDE (Europe) were evaluated zero-shot on BELDE-K and BELDE-CA-NV. All architectures show consistent performance degradation under domain shift, MaxViT and EfficientFormer-L7 lead on both extensions (58.2%/58.3% F1 on BELDE-K, 66.4%/66.2% F1 on BELDE-CA-NV), while LALE models trade some accuracy for stability and efficiency. This confirms that RGB-only segmentation models rely heavily on region-specific spatial and textural cues, motivating geographically diverse benchmarks like BELDE.
 
 We further evaluated data scaling and diffusion-based synthetic augmentation on a BELDE subset: real-data scaling alone reaches 74.66% F1 at full capacity (80,000 pairs), and adding synthetic samples from a latent diffusion model conditioned on segmentation masks improves this further to 75.68% F1 (+1.02%), showing that generative augmentation provides utility beyond real-data availability.
 

@@ -11,7 +11,7 @@ title: Benchmarking the Alignment of Data-Quality Metrics
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
-> **TL;DR:** Automated quality metrics (FID, KID, IS, LPIPS, SSIM) are the default tool for filtering synthetic Earth observation data, but we show they can be fooled: semantics-preserving perturbations like rotation drastically alter metric scores while leaving human recognition unaffected, and synthetic samples that score poorly on these metrics can look just as realistic to humans and still improve downstream segmentation performance when blended with real data. Automatic evaluation of synthetic EO data cannot rely on latent metrics alone — it needs joint consideration of downstream utility and human perception.
+> **TL;DR:** Automated quality metrics (FID, KID, IS, LPIPS, SSIM) are the default tool for filtering synthetic Earth observation data, but we show they can be fooled: semantics-preserving perturbations like rotation drastically alter metric scores while leaving human recognition unaffected, and synthetic samples that score poorly on these metrics can look just as realistic to humans and still improve downstream segmentation performance when blended with real data. Automatic evaluation of synthetic EO data cannot rely on latent metrics alone, it needs joint consideration of downstream utility and human perception.
 
 ![Image transformations and perturbations](bench1.jpg)
 
@@ -32,10 +32,10 @@ All patches are 256×256 pixels at 10 m spatial resolution with seven shared lan
 
 | Dataset | Type | Generator | Region | Patches |
 |---|---|---|---|---|
-| ARAS-train / ARAS-test | Real | — | Türkiye | 80,192 / 10,024 |
-| BELDE | Real | — | Europe | 1,088,385 |
-| BELDE-K | Real | — | Rep. of Korea | 16,607 |
-| BELDE-CA-NV | Real | — | California-Nevada | 88,155 |
+| ARAS-train / ARAS-test | Real | - | Türkiye | 80,192 / 10,024 |
+| BELDE | Real | - | Europe | 1,088,385 |
+| BELDE-K | Real | - | Rep. of Korea | 16,607 |
+| BELDE-CA-NV | Real | - | California-Nevada | 88,155 |
 | ARAS-CSD / BELDE-CSD | Conditional | Stable Diffusion | Türkiye | 80,192 each |
 | ARAS-CUGAN | Conditional | U-Net GAN | Türkiye | 80,192 |
 | ARAS-SGAN3 / ARAS-SGAN3-D | Unconditional | StyleGAN3 | Türkiye | 300,000 / 100,000 |
@@ -50,7 +50,7 @@ All patches are 256×256 pixels at 10 m spatial resolution with seven shared lan
 
 To evaluate the alignment between automated quality metrics, human perception, and downstream data utility, the study is structured into four sequential phases:
 
-1. **Augmentation Alignment:** Participants judge whether a baseline image and its transformed variant depict the same scene. Human accuracy stays above 90% for rotation, perspective, flip, and resized-crop, dropping to 79.2% under noise and 56.6% under combined perturbation — even though these same transforms can swing FID from 2.09 to over 100.
+1. **Augmentation Alignment:** Participants judge whether a baseline image and its transformed variant depict the same scene. Human accuracy stays above 90% for rotation, perspective, flip, and resized-crop, dropping to 79.2% under noise and 56.6% under combined perturbation, even though these same transforms can swing FID from 2.09 to over 100.
 2. **Utility for Downstream Tasks:** Participants judge whether an Earth observation image matches its land-cover segmentation map. Real and synthetic pairs are verified with comparable accuracy (72.9% vs. 72.4%), showing synthetic masks are as interpretable as real ones.
 3. **Conditional Generation Preference:** Given a real image and its segmentation mask, participants pick the most consistent synthetic output. Stable Diffusion trained on ARAS400k (ARAS-CSD) is preferred most (39%), followed by BELDE-CSD (33%) and ARAS-CUGAN (28%).
 4. **Data Realism Scores:** Participants rate individual images on a 5-point Likert scale. The synthetic ARAS-SGAN3 dataset (μ = 3.43) is rated *more* realistic than two of the four real datasets, BELDE (μ = 3.32) and BELDE-CA-NV (μ = 3.09), despite having a substantially worse FID.
